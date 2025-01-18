@@ -11,9 +11,9 @@ shopping_list = []
     
 while True:
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = int(input("Enter your choice: "))
 
-        if choice == "1":
+        if choice == 1:
             # prompt for add item
             item = input("Enter name of item to add: ").strip()
             if item:
@@ -22,7 +22,7 @@ while True:
             else:
                 print("Item name cannot be empty!")
 
-        elif choice == "2":
+        elif choice == 2:
             # prompt to remove item
             item = input("Enter name of item to remove: ").strip()
             if item in shopping_list:
@@ -31,7 +31,7 @@ while True:
             else:
                 print(f"{item} not in the shopping list")
 
-        elif choice == "3":
+        elif choice == 3:
             # prompt to view shopping list
             if shopping_list:
                 print("Your shopping list:")
@@ -40,7 +40,7 @@ while True:
             else:
                 print("Your shopping list is empty.")
 
-        elif choice == "4":
+        elif choice == 4:
             # prompt to exit
             print("Goodbye!")
             break
