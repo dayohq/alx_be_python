@@ -7,7 +7,7 @@ def main():
 
     # Check if the user provided a command-line argument
     if len(sys.argv) < 2:
-        print("Usage: python main-0,py [operation:amount or display]")
+        print("Usage: python main-0.py [operation:amount or display]")
         return
     
     # Parse the operation and amount from the command-line argument
