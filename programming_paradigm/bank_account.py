@@ -7,8 +7,8 @@ class BankAccount:
             """Add the specified amount to the account balance."""
             if amount > 0:
                 self.__account_balance += amount
-                return self.display_balance() # Return the formatted balance after deposit
-            return "Deposit amount must be greater than zero."
+                return True
+            return False
         
     def withdraw(self, amount):
             """
@@ -17,8 +17,8 @@ class BankAccount:
             """
             if 0 < amount <= self.__account_balance:
                 self.__account_balance -= amount
-                return self.display_balance() # Return the formatted balance after deposit
-            return "Withdrawal amount must be greater than zero."
+                return True
+            return False
         
     def display_balance(self):
             """Return the current account balance."""
