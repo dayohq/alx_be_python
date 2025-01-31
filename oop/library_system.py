@@ -9,7 +9,7 @@ class Book:
         return f"Book: {self.title} by {self.title}"
     
 # Derived Class - EBook
-class Ebook(Book):
+class EBook(Book):
     def __init__(self, title, author, file_size):
         """Initializes an eBook with title, author, and file size."""
         super().__init__(title, author)
@@ -42,4 +42,3 @@ class Library:
         """Prints details of each book in the library."""
         for book in self.books:
             print(book)
-            
